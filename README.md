@@ -1,43 +1,23 @@
 # Sundays Art Hub – Art Gallery Web Interface
 
-A clean and minimal web interface built with **React** and **Tailwind CSS** to showcase curated paintings, drawings, sculptures, and featured artists from Sundays Art Hub.
+This project is a clean and responsive frontend for an art gallery platform called Sundays Art Hub. It showcases featured paintings and artists, and provides a detailed view for individual artworks. Built with React and Tailwind CSS, the interface is designed for seamless browsing of curated artwork.
 
-## ✨ Features
 
-- 🖼️ **Featured Paintings Carousel**: Showcases highlighted artworks with details.
-- 👨‍🎨 **Featured Artists Grid**: Displays selected artists with locations.
-- 📝 **Painting Detail Page**: Detailed view for individual paintings with purchasing information.
-- 📱 **Responsive UI**: Optimized for both mobile and desktop users.
-- ⚡ **Tailwind CSS Styling**: Lightweight and fully customizable styles.
+## Backend Repository
 
----
+[Backend link](https://github.com/ElisaNiyogisubizo/sundays-bn)
 
-## 📁 Project Structure
+## Video Demo
 
-```
-src/
-│
-├── components/
-│   ├── Navbar.tsx                # Top navigation bar
-│   ├── FeaturedPaintings.tsx     # Horizontal scrollable painting section
-│   ├── FeaturedArtists.tsx       # Grid of featured artists
-│   └── PaintingDetail.tsx        # Detailed painting information
-│
-├── pages/
-│   ├── Home.tsx                  # Landing page with paintings and artists
-│   └── PaintingPage.tsx          # Standalone page for a specific painting
-│
-├── main.tsx                      # React root with Home route
-├── index.css                     # Tailwind base + utilities
-```
+A video walkthrough demonstrating all the functionalities of the app:
 
----
+[Demo](https://drive.google.com/drive/folders/1S-8ZqW_oGRUDxRDQBcXx8xEsXL7BG8g1?usp=drive_link)
 
-## 🚀 Getting Started
+## Project Setup
 
 ### Prerequisites
 
-- Node.js (v16 or later recommended)
+- Node.js (v16+)
 - npm or yarn
 
 ### Installation
@@ -53,64 +33,63 @@ src/
 
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
 3. Run the development server:
 
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
-4. Open your browser and go to `http://localhost:5173`
+4. Open your browser and visit: `http://localhost:5173`
 
----
+## Deployment Plan
 
-## 🖼️ Image Assets
+This project is ready for deployment using platforms such as Vercel, Netlify, or GitHub Pages.
 
-Ensure that your `public/images/` directory includes the following:
-
-- `wallowing_breeze.jpg`
-- `resistance.jpg`
-- `worn_basket.jpg`
-- `the_youngest.jpg`
-
-These are used in the **FeaturedPaintings** and **PaintingDetail** components.
-
----
-
-## 📦 Build
-
-To generate a production build:
+To generate a production-ready build:
 
 ```bash
 npm run build
-# or
-yarn build
 ```
 
----
+The `dist/` directory can be deployed directly to your preferred hosting provider.
 
-## 📌 Future Improvements
+## App Structure
 
-- Routing with `react-router` for better navigation between artworks.
-- Integration with backend (CMS or eCommerce platform).
-- Filter and sort features for paintings and artists.
-- Dynamic data loading via API or CMS.
+- **Homepage**: Features a navigation bar, a scrollable horizontal gallery of selected paintings, and a grid view of featured artists.
+- **Painting Page**: A detailed layout displaying artwork information, artist name, medium, description, and pricing.
 
----
+All components are modular and reusable.
 
-## 📄 License
+## Designs and Assets
 
-This project is open-source and available under the [MIT License](LICENSE).
+- **Figma Mockups**: [Insert Figma link if available]
+- **App Interface Screenshots**:
+  - Homepage (paintings and artists section)
+  - Painting Detail Page
+- **Circuit Diagram**: Not applicable
 
----
+## Code Files
 
-## 👨‍🎨 Created by
+The source code is organized as follows:
 
-**Elisa Niyogisubizo**  
-Founder & Gallery Director – Sundays Art Hub  
-Passionate about making art accessible and elevating African creative voices.
+```
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── FeaturedPaintings.tsx
+│   ├── FeaturedArtists.tsx
+│   └── PaintingDetail.tsx
+├── pages/
+│   ├── Home.tsx
+│   └── PaintingPage.tsx
+├── main.tsx
+├── index.css
+```
+
+All components are styled using Tailwind CSS and rendered with React.
+
+## Summary
+
+This repository contains all necessary frontend code to demonstrate a working gallery web interface. It is designed for scalability and ease of integration with a backend API for future enhancements. The demo video provides a complete walkthrough of the user interface and key functionalities.
